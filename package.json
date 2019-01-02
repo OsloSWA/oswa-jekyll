@@ -9,7 +9,6 @@
     "build:local": "bundle exec jekyll build --config _config.yml,_config_dev.yml",
     "build:dervisno": "npm run clean && bundle exec jekyll build --config _config.yml,_config_oswa_no.yml",
     "serve": "bundle exec jekyll serve --config _config.yml,_config_dev.yml",
-
     "test": "npm run build && bundle exec htmlproofer ./_site --url-ignore '/tags/' --internal-domains 'localhost:4000' --check-html --allow-hash-href --check_opengraph"
   },
   "repository": {

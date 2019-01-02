@@ -1,0 +1,5 @@
+{% assign sections = site.sections | sort:"index" %}
+
+{% for section in sections %}
+  {{ section.content }}
+{% endfor %}

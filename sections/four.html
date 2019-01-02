@@ -1,0 +1,56 @@
+---
+title:  Four
+date:   2015-08-11 19:23
+index:  4
+---
+<!-- Four -->
+<section id="tidligeremeetups" class="wrapper style2">
+    <div class="inner">
+        <div class="content">
+            <section class="special">
+                <header>
+                    <h2>Tidligere meetups</h2>
+                </header>
+            </section>
+
+            <section>
+                <script id="pastTemplate" type="text/x-jsrender">
+                  {% raw %}
+                    <div></div>
+					<div class="row">
+					    <div class="col-2">&nbsp;</div>
+						<div class="col-12-medium col-8">
+								<ul class="alt">
+										{{for events}}
+										<li>
+										    <div class="row">
+										        <div class="col-2 col-4-medium">
+                                                    <span class="icon fa-calendar"> {{:time}}</span>
+                                                </div>
+                                                <div class="col-10 col-8-medium">
+										            <section>
+                                                        <a class="icon red" target="_blank" href="{{:shortlink}}">{{:name}}</a>
+                                                    </section>
+                                                </div>
+                                            </div>
+										</li>
+										{{/for}}
+								</ul>
+						</div>
+						<div class="col-2">&nbsp;</div>
+					</div>
+          {% endraw %}
+                </script>
+
+                <footer id="pastMeetupList">
+                    <p>Ingen tidligere meetups.</p>
+                </footer>
+            </section>
+
+            <ul class="actions special">
+                <li><span id="showMoreBtn" class="button small">Vis flere</span></li>
+            </ul>
+
+        </div>
+    </div>
+</section>

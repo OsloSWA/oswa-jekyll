@@ -1,41 +1,11 @@
-<nav class="{% if page.title == "Home" %}nav-home{% else %}nav{% endif %}">
-<ul class="list">
-    {% if page.pageid != "Home" %}
-    <li class="item">
-        <a class="link" href="{{ site.url }}/">Home</a>
-    </li>
-    {% endif %}
-
-    {% if site.blog == true %}
-    {% if page.pageid != "Blog" %}
-    <li class="item">
-        <a class="link" href="{{ site.url }}/blog">Blog</a>
-    </li>
-    {% endif %}
-    {% endif %}
-
-    {% if site.public_projects == true %}
-    {% if page.pageid != "Projects" %}
-    <li class="item">
-        <a class="link" href="{{ site.url }}/projects">Projects</a>
-    </li>
-    {% endif %}
-    {% endif %}
-
-    {% if site.public_talks == true %}
-    {% if page.pageid != "Talks" %}
-    <li class="item">
-        <a class="link" href="{{ site.url }}/talks">Talks</a>
-    </li>
-    {% endif %}
-    {% endif %}
-
-    {% if site.about == true %}
-    {% if page.pageid != "About" %}
-    <li class="item">
-        <a class="link" href="{{ site.url }}/about">About</a>
-    </li>
-    {% endif %}
-    {% endif %}
-</ul>
+<!-- Menu -->
+<nav id="menu">
+    <ul class="links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="omoss.html">Om Oss</a></li>
+        <li><a href="vaarhistorie.html">Vår Historie</a></li>
+    </ul>
+    <ul class="actions stacked">
+        <li><a target="_blank" href="https://goo.gl/forms/OJpL46F0qJMNvgIO2" class="button primary fit">Foreslå meetup</a></li>
+    </ul>
 </nav>

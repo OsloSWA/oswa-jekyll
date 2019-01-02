@@ -37,14 +37,15 @@ github: OsloSWA
 
 plugins_dir: ./_plugins
 plugins:
-  - jemoji
-  - jekyll-mentions
   - jekyll-seo-tag
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-paginate
 
+collections:
+  sections:
+    output: true
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

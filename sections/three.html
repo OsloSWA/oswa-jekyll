@@ -1,0 +1,41 @@
+---
+title:  Three
+date:   2015-08-11 19:23
+index:  3
+---
+<!-- Three -->
+<section id="meetups" class="wrapper style1 special">
+    <div class="inner">
+        <div class="content">
+            <header>
+                <h2>Planlagte meetups</h2>
+            </header>
+
+            <script id="upcomingTemplate" type="text/x-jsrender">
+              {% raw %}
+                <div></div>
+                   <div class="row">
+						<div class="col-12">
+							{{for events}}
+                            <section>
+                                <h3>
+                                <a class="icon fa-calendar red" target="_blank"
+                                    href="{{:shortlink}}"> {{:time}} - {{:name}}</a>
+                                </h3>
+                                <p>{{:description}}</p>
+                                <ul class="actions">
+                                    <li><a target="_blank" href="{{:shortlink}}" class="button primary small">Join</a></li>
+                                </ul>
+                            </section>
+                          {{/for}}
+						</div>
+            {% endraw %}
+            </script>
+
+            <footer id="upcomingMeetupList">
+                <p>Ingen meetups er planlagt enda. <br/> Hva med å <a target="_blank" href="https://goo.gl/forms/OJpL46F0qJMNvgIO2">foreslå en?</a> </p>
+            </footer>
+
+        </div>
+    </div>
+</section>

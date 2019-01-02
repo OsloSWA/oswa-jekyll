@@ -1,32 +1,5 @@
-{% if page.pageid == "Home"
-or page.title == "Blog"
-or page.title == "About"
-or page.title == "Projects"
-or page.title == "Talks"
-or page.title == "Tags"
-%}
-{% assign showHeader = true %}
-{% endif %}
-
-{% if showHeader == true %}
-<header class="header-home {% if site.animation and include.animation %}animated{% endif %}">
-    {% if site.about %}
-    <a class="link" href="{{ site.url }}/about">
-        <img class="selfie" alt="{{ site.name }}" src="{% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ include.picture }}{% endif %}" />
-    </a>
-    {% else %}
-    <span class="link">
-                <img class="selfie" alt="{{ site.name }}" src="{% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ include.picture }}{% endif %}" />
-            </span>
-    {% endif %}
-
-    <h1 class="title">{{ include.sitename }}</h1>
-    <h2 class="description">{{ include.sitebio }}</h2>
-
-    {% if include.social %}
-    {% include social-links.html %}
-    {% endif %}
+<!-- Header -->
+<header id="header" class="alt">
+    <h1><a href="index.html"><span class="icon"><img src="assets/images/favicon/favicon-16x16.png" alt="oswa logo"></span> OSWA</a></h1>
+    <a href="#menu">Menu</a>
 </header>
-{% endif %}
-
-{% include nav.html %}
