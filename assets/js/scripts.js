@@ -243,7 +243,7 @@ function loadPhotoAlbums() {
             html.elementChildAdd(gridCell, html.elementClass('span', 'image fit')),
             html.element('img')
         );
-        img.setAttribute('src', 'images/clear.png');
+        img.setAttribute('src', 'assets/images/clear.png');
         img.setAttribute('alt', sample.title);
         html.elementChildAdd(grid, gridCell);
         imageMap.push({el: img, sample, gridCell, grid});
@@ -312,7 +312,7 @@ function loadPhotoAlbumCircles() {
         for (let j = 0; j < 3; j++) {
             let gridCell = html.elementClass('span', 'image');
             const img = html.element('img');
-            img.setAttribute('src', 'images/oswa-logo-s.jpeg');
+            img.setAttribute('src', 'assets/images/oswa-logo-s.jpeg');
             img.setAttribute('alt', 'event photo');
 
             html.elementChildAdd(imageContainer, html.elementParentAdd(gridCell, img));
