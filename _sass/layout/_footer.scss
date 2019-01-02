@@ -14,7 +14,7 @@
 		@include padding(7em, 0);
 		@include vendor('background-image', (
 			'linear-gradient(to top, #{$overlay}, #{$overlay})',
-			'url("../../images/banner.jpg")',
+			'url("assets/images/banner.jpg")',
 		));
 		background-attachment: fixed;
 		background-position: center;

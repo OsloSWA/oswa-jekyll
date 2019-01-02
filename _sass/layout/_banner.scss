@@ -17,7 +17,7 @@
 		@include vendor('justify-content', 'center');
 		@include vendor('background-image', (
 			'linear-gradient(to top, #{$overlay}, #{$overlay})',
-			'url("../../images/banner.jpg")',
+			'url("assets/images/banner.jpg")',
 		));
 		background-attachment: fixed;
 		background-position: center;
