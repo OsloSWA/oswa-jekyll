@@ -8,7 +8,7 @@ Goto http://osloswa.github.io
 
 First install Ruby correctly, then install bundler. See below.
 
-### Correctly installing Ruby on MacOS
+### Correctly installing Ruby (MacOS)
 
 Install Ruby using HomeBrew:
 
@@ -23,8 +23,7 @@ export PATH="/usr/local/opt/ruby/bin:$PATH"
 export LDFLAGS="-L/usr/local/opt/ruby/lib"
 export CPPFLAGS="-I/usr/local/opt/ruby/include"
 export PKG_CONFIG_PATH="/usr/local/opt/ruby/lib/pkgconfig"
-
-```
+```  
 
 Add the following to your .bashrc file:
 
