@@ -1,4 +1,4 @@
-# osloswa.github.com
+# OSWA Jekyll Template
 
 OSWA Jekyll website repo.
 
