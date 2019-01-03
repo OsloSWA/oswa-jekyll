@@ -6,7 +6,7 @@ Goto http://osloswa.github.io
 
 # Setup
 
-First install Ruby correctly, then install bundler. See below.
+First install `Ruby` to correctly compile the sources, then install `Bundler` to build the project. See below.
 
 ### Correctly installing Ruby (MacOS)
 
@@ -16,7 +16,7 @@ Install Ruby using HomeBrew:
 $ brew install ruby
 ```
 
-Add the following to your .bash_profile file:
+1. Add the following to your `.bash_profile` file:
 
 ```
 export PATH="/usr/local/opt/ruby/bin:$PATH"                    
@@ -25,7 +25,7 @@ export CPPFLAGS="-I/usr/local/opt/ruby/include"
 export PKG_CONFIG_PATH="/usr/local/opt/ruby/lib/pkgconfig"
 ```  
 
-Add the following to your .bashrc file:
+2. Add the following to your `.bashrc` file:
 
 ```
 export GEM_HOME=$HOME/gems
@@ -35,7 +35,7 @@ export PATH=$HOME/gems/bin:$PATH
 
 ### Install the project (MacOS)
 
-Install `Bundler`:
+3. Install `Bundler`:
 
 `gem install bundler`
 
