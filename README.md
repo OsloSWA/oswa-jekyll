@@ -4,7 +4,7 @@ OSWA Jekyll website repo.
 
 Goto http://osloswa.github.io
 
-# Setup
+## Setup
 
 First install `Ruby` to compile the sources, then install `Bundler` to build the project. See below.
 
@@ -76,3 +76,8 @@ If you encounter a problem around building the project (such as failure to build
 Also make sure that you actually run the newly installed version of Ruby:
 
 `ruby -v`
+
+## Resources
+
+[Jekyll Docs](https://jekyllrb.com/docs/)
+[Liquid Docs](https://shopify.github.io/liquid/)
