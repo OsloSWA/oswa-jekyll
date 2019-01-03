@@ -8,8 +8,8 @@ Goto http://osloswa.github.io
 
 First install `Ruby` to compile the sources, then install `Bundler` to build the project. See below.
 
-Using Windows? See [here](https://jekyllrb.com/docs/installation/windows/).
-Using Linux? See [here](https://jekyllrb.com/docs/installation/ubuntu/)
+Using Windows? See [here](https://jekyllrb.com/docs/installation/windows/).  
+Using Linux? See [here](https://jekyllrb.com/docs/installation/ubuntu/)  
 
 ### Correctly installing Ruby (MacOS)
 
@@ -79,5 +79,5 @@ Also make sure that you actually run the newly installed version of Ruby:
 
 ## Resources
 
-[Jekyll Docs](https://jekyllrb.com/docs/)
-[Liquid Docs](https://shopify.github.io/liquid/)
+[Jekyll Docs](https://jekyllrb.com/docs/)  
+[Liquid Docs](https://shopify.github.io/liquid/)  
