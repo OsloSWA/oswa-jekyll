@@ -9,6 +9,7 @@ Goto http://osloswa.github.io
 First install `Ruby` to compile the sources, then install `Bundler` to build the project. See below.
 
 Using Windows? See [here](https://jekyllrb.com/docs/installation/windows/).
+Using Linux? See [here](https://jekyllrb.com/docs/installation/ubuntu/)
 
 ### Correctly installing Ruby (MacOS)
 
@@ -44,7 +45,7 @@ export GEM_HOME=$HOME/gems
 export PATH=$HOME/gems/bin:$PATH
 ```  
 
-These environment variables will allow you to build (using Bundler) Ruby projects without needing admin access to protected Mac OS folder. Ruby Gems will be installed in your Users folder instead of the system folders.
+These environment variables will allow you to build (using Bundler) Ruby projects without needing admin access to protected Mac OS folders. The variables set the default Gem path to your users folder, which also enables dependencies for other projects to be installed in the users folder (instead of system folders).
 
 Reload the `.bashrc` file to read in the environment variables:
 
@@ -54,9 +55,9 @@ source ~/.bashrc
 
 ### Install the project (MacOS)
 
-4. Install `Bundler`:
+4. Install `Bundler` and `Jekyll`:
 
-`gem install bundler`
+`gem install bundler jekyll`
 
 5. Install project:
 
@@ -66,7 +67,9 @@ source ~/.bashrc
 
 #### Cannot build Gem / native extension xxxxxxxx (MacOS)
 
-The bundled version of Ruby in MacOS, has known issues around building native extenstions to Ruby. This is partly because of the MacOS System Integrity Protection (SIP) that reduces access to system folders and partitions. If you encounter a problem around building the project (such as failure to build Nokogiri-extenstions), then make sure that the environment variables is correctly set and loaded. Run the following command to check:
+The bundled version of Ruby in MacOS, has known issues around building native extensions to Ruby. This is partly because of the MacOS System Integrity Protection (SIP) that reduces access to system folders and partitions. Don't disable the SIP, many older and outdated answers on StackOverflow recommend it, but doing so will cause a lot of other problems.
+
+If you encounter a problem around building the project (such as failure to build the Nokogiri-extension), then make sure that the environment variables is correctly set and loaded. Run the following command to check:
 
 `env`
 
