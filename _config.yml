@@ -46,6 +46,9 @@ plugins:
 collections:
   sections:
     output: false
+  pages:
+    output: true
+    permalink: /:name.html
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
