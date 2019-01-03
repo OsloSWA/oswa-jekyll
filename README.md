@@ -8,7 +8,7 @@ Goto http://osloswa.github.io
 
 First install `Ruby` to compile the sources, then install `Bundler` to build the project. See below.
 
-Using Windows? See (here)[https://jekyllrb.com/docs/installation/windows/].
+Using Windows? See [here](https://jekyllrb.com/docs/installation/windows/).
 
 ### Correctly installing Ruby (MacOS)
 
