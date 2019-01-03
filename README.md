@@ -8,6 +8,8 @@ Goto http://osloswa.github.io
 
 First install `Ruby` to compile the sources, then install `Bundler` to build the project. See below.
 
+Using Windows? See (here)[https://jekyllrb.com/docs/installation/windows/].
+
 ### Correctly installing Ruby (MacOS)
 
 1. Install latest version of Ruby using HomeBrew:
@@ -62,7 +64,7 @@ source ~/.bashrc
 
 ### Known issues
 
-#### Cannot build Gem / native extension xxxxxxxx
+#### Cannot build Gem / native extension xxxxxxxx (MacOS)
 
 The bundled version of Ruby in MacOS, has known issues around building native extenstions to Ruby. This is partly because of the MacOS System Integrity Protection (SIP) that reduces access to system folders and partitions. If you encounter a problem around building the project (such as failure to build Nokogiri-extenstions), then make sure that the environment variables is correctly set and loaded. Run the following command to check:
 
