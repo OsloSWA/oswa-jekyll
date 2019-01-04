@@ -25,7 +25,7 @@ module.exports = {
       },
     },
     test: {
-      script: 'nps build.dev && bundle exec htmlproofer ./docs --url-ignore "/assets/" --internal-domains "localhost:4000" --check-html --allow-hash-href --check_opengraph',
+      script: 'nps build.dev && bundle exec htmlproofer ./docs --internal-domains "localhost:4000" --check-html --allow-hash-href --check_opengraph',
       description: 'Tests the site.'
     },
     serve: {
