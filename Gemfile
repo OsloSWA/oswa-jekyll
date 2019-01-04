@@ -10,4 +10,4 @@ gem 'jekyll-feed'
 gem 'jekyll-sitemap'
 gem 'jekyll-gist'
 gem 'jekyll-paginate'
-gem 'jekyll-compose' # https://github.com/jekyll/jekyll-compose
+gem 'jekyll-compose', group: [:jekyll_plugins] # https://github.com/jekyll/jekyll-compose
