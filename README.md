@@ -2,7 +2,7 @@
 
 OSWA Jekyll website repo.
 
-Goto http://osloswa.github.io
+https://osloswa.github.io/oswa-jekyll/
 
 ## Setup
 
@@ -10,6 +10,8 @@ First install `Ruby` to compile the sources, then install `Bundler` to build the
 
 Using Windows? See [here](https://jekyllrb.com/docs/installation/windows/).  
 Using Linux? See [here](https://jekyllrb.com/docs/installation/ubuntu/)  
+
+You also need Node and NPM if you want to work on the code.
 
 ### Correctly installing Ruby (MacOS)
 
@@ -61,6 +63,7 @@ source ~/.bashrc
 
 5. Install project:
 
+`npm install`
 `bundle install`
 
 ### Known issues
