@@ -59,6 +59,8 @@ exclude:
   - Gemfile.lock
   - node_modules
 
+destination: docs
+
 sass:
   sass_dir: _sass
   style: :compressed
