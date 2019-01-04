@@ -36,9 +36,9 @@ permalink: /
 
           {% case page.imagePos %}
             {% when 'left' %}
-               <span class="image left"><img src="{{page.image}}" alt="" /></span>
+               <span class="image left"><img src="{{site.url}}{{page.image}}" alt="" /></span>
             {% else %}
-               <span class="image right"><img src="{{page.image}}" alt="" /></span>
+               <span class="image right"><img src="{{site.url}}{{page.image}}" alt="" /></span>
           {% endcase %}
 
         {% endif %}
