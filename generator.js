@@ -8,7 +8,7 @@ program._name = 'npm-jekyll-composer';
 program
   .version(JSON.parse(
       fs.readFileSync(path.join(__dirname, 'package.json'), 'utf8')
-    ).version)
+    ).version, '-v, --version')
   .usage('[options]')
   .option('-p, --page <value>', 'generate a page')
   .option('-o, --post <value>', 'generate a post')
@@ -16,15 +16,15 @@ program
   .parse(process.argv);
 
 if (program.page) {
-  exec("./node_modules/.bin/nps \"jekyll.page \"" + program.page, callback());
+  exec("bundle exec jekyll page " + program.page, callback());
 }
 
 if (program.post) {
-  exec("./node_modules/.bin/nps \"jekyll.post \"" + program.post, callback());
+  exec("bundle exec jekyll post " + program.post, callback());
 }
 
 if (program.draft) {
-  exec("./node_modules/.bin/nps \"jekyll.draft \"" + program.draft, callback());
+  exec("bundle exec jekyll draft " + program.draft, callback());
 }
 
 function callback() {
