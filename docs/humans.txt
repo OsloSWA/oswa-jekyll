@@ -6,4 +6,4 @@
 
 # SITE
 
-	Last update: 2018/12/18
+	Last update: 2019/01/04

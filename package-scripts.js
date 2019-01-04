@@ -4,8 +4,8 @@ module.exports = {
   scripts: {
     build: {
       default: {
-        script: 'nps build.clean build.dev',
-        description: 'Default build step that builds site in dev mode.'
+        script: 'nps build.github',
+        description: 'Default build step that builds the site in GitHub mode.'
       },
       dev: {
         script: 'nps build.clean && bundle exec jekyll build --config _config.yml,_config_dev.yml',
@@ -25,7 +25,7 @@ module.exports = {
       },
     },
     test: {
-      script: 'npm run build && bundle exec htmlproofer ./docs --url-ignore "/tags/" --internal-domains "localhost:4000" --check-html --allow-hash-href --check_opengraph',
+      script: 'nps build.dev && bundle exec htmlproofer ./docs --url-ignore "/assets/" --internal-domains "localhost:4000" --check-html --allow-hash-href --check_opengraph',
       description: 'Tests the site.'
     },
     serve: {

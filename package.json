@@ -4,17 +4,17 @@
   "description": "OSWA.no website.",
   "main": "index.html",
   "scripts": {
-    "clean": "nps build.clean",
     "build": "nps build",
     "build:local": "nps build.dev",
     "build:github": "nps build.github",
     "build:oswano": "nps build.oswano",
+    "clean": "nps build.clean",
     "serve": "nps serve",
     "test": "nps test",
     "page": "node generator --page",
     "post": "node generator --post",
     "draft": "node generator --draft",
-    "help": "node generator -V"
+    "help": "node generator -h"
   },
   "repository": {
     "type": "git",
