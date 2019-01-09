@@ -29,7 +29,7 @@ module.exports = {
       description: 'Tests the site.'
     },
     serve: {
-      script: 'bundle exec jekyll serve --config _config.yml,_config_dev.yml',
+      script: 'nps build.clean && bundle exec jekyll serve --config _config.yml,_config_dev.yml',
       description: 'Runs the site in dev mode. Accessible at http://localhost:4000.'
     }
   }
