@@ -17,3 +17,7 @@
 #communityPhotosGrid img {
     background: url(../images/loading.gif) 50% no-repeat;
 }
+
+.red {
+  color: #FF0000;
+}
