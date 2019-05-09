@@ -172,6 +172,7 @@ function templateEvents(data) {
     const description = event.description;
     const time = moment(new Date(event.time)).format(format); // UTC start time of the event, in milliseconds since the epoch
     const shortlink = event.short_link;
+    const link = event.link;
     const venue = event.venue;
     const yes_rsvp_count = event.yes_rsvp_count;
     const waitlist_count = event.waitlist_count;
@@ -184,7 +185,7 @@ function templateEvents(data) {
         description,
         status,
         time: time.charAt(0).toUpperCase() + time.slice(1),
-        shortlink, venue, yes_rsvp_count, waitlist_count, web_actions,photo_album
+        shortlink, venue, yes_rsvp_count, waitlist_count, web_actions,photo_album,link
     });
     console.log(event);
   });
