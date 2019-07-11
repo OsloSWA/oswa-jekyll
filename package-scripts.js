@@ -12,7 +12,7 @@ module.exports = {
         description: 'Builds site in dev mode.'
       },
       github: {
-          script: 'nps build.clean && bundle exec jekyll build --config _config.yml,_config_githubpages.yml',
+          script: 'nps build.clean && bundle exec jekyll build',
           description: 'Builds site in GitHub mode (deployable to GitHub Pages).'
       },
       oswano: {
@@ -20,12 +20,12 @@ module.exports = {
           description: 'Builds site in prod mode.'
       },
       clean: {
-        script: 'bundle exec jekyll clean && rimraf docs',
+        script: 'bundle exec jekyll clean && rimraf _site',
         description: 'Clean up.',
       },
     },
     test: {
-      script: 'nps build.dev && bundle exec htmlproofer ./docs --internal-domains "localhost:4000" --check-html --allow-hash-href --check_opengraph',
+      script: 'nps build.dev && bundle exec htmlproofer ./_site --internal-domains "localhost:4000" --check-html --allow-hash-href --check_opengraph',
       description: 'Tests the site.'
     },
     serve: {

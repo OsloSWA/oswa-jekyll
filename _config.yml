@@ -3,7 +3,7 @@ name: Oslo Software Architecture
 bio: Det største arkitekturmiljøet i Norge
 description: The homepage of OSWA.
 
-url: https://github.com/OsloSWA # is overridden in _dev.yml and oswa_no.yml
+url: https://osloswa.github.io
 timezone: Europe/Oslo
 
 permalink: /:title/
@@ -52,8 +52,6 @@ exclude:
   - Gemfile.lock
   - node_modules
   - README.md
-
-destination: docs
 
 sass:
   sass_dir: _sass
