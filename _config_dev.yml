@@ -3,3 +3,4 @@ unpublished: true
 future: true
 show_drafts: true
 strict_front_matter: true
+analytics-google: ''

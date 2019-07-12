@@ -26,8 +26,8 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "commander": "2.19.0",
-    "nps": "5.9.3",
+    "commander": "2.20.0",
+    "nps": "5.9.5",
     "rimraf": "2.6.3"
   }
 }

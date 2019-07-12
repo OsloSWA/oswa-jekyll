@@ -5,6 +5,7 @@ description: The homepage of OSWA.
 
 url: https://osloswa.github.io
 timezone: Europe/Oslo
+analytics-google: 'UA-143762434-1'
 
 permalink: /:title/
 markdown: kramdown
