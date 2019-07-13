@@ -1,6 +1,6 @@
-# OSWA Jekyll Template
+# OSWA.no
 
-OSWA Jekyll website repo.
+OSWA website repo.
 
 https://oswa.no
 
