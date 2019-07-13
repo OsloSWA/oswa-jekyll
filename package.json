@@ -4,13 +4,13 @@
   "description": "OSWA.no website.",
   "main": "index.html",
   "scripts": {
-    "build": "nps build",
-    "build:local": "nps build.dev",
-    "build:github": "nps build.github",
-    "build:oswano": "nps build.oswano",
-    "clean": "nps build.clean",
-    "serve": "nps serve",
-    "test": "nps test",
+    "build": "npm run build:oswa.no",
+    "build:local": "npm run clean && bundle exec jekyll build --config _config.yml,_config_dev.yml",
+    "build:github": "npm run clean && bundle exec jekyll build",
+    "build:oswano": "npm run clean && bundle exec jekyll build --config _config.yml,_config_oswa_no.yml",
+    "clean": "bundle exec jekyll clean && rimraf _site",
+    "serve": "npm run clean && bundle exec jekyll serve --config _config.yml,_config_dev.yml",
+    "test": "npm run build:local && bundle exec htmlproofer ./_site --internal-domains 'localhost:4000' --check-html --allow-hash-href --check_opengraph",
     "page": "node generator --page",
     "post": "node generator --post",
     "draft": "node generator --draft",
@@ -27,7 +27,6 @@
   "license": "MIT",
   "devDependencies": {
     "commander": "2.20.0",
-    "nps": "5.9.5",
     "rimraf": "2.6.3"
   }
 }
