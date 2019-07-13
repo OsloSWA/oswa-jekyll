@@ -2,7 +2,7 @@
 
 OSWA Jekyll website repo.
 
-https://osloswa.github.io/oswa-jekyll/
+https://oswa.no
 
 ## Setup
 
