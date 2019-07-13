@@ -10,7 +10,7 @@
     "build:oswano": "npm run clean && bundle exec jekyll build --config _config.yml,_config_oswa_no.yml",
     "clean": "bundle exec jekyll clean && rimraf _site",
     "serve": "npm run clean && bundle exec jekyll serve --config _config.yml,_config_dev.yml",
-    "test": "npm run build:local && bundle exec htmlproofer ./_site --internal-domains 'localhost:4000' --check-html --allow-hash-href --check_opengraph",
+    "test": "npm run build:local && bundle exec htmlproofer ./_site --internal-domains 'localhost:4000' --check-html --allow-hash-href --check_opengraph --http-status-ignore 999",
     "page": "node generator --page",
     "post": "node generator --post",
     "draft": "node generator --draft",
