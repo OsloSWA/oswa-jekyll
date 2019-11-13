@@ -2,7 +2,7 @@
 
 # TEAM
 
-	Oslo Software Architecture - http://www.oswa.no
+	Oslo Software Architecture - https://www.oswa.no
 
 # SITE
 
