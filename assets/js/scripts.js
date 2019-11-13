@@ -67,6 +67,7 @@ const html = {
 };
 
 /**
+ * Meetup API v3
  * Makes a call to the Meetup.com API and returns a promise.
  * The call uses signatures that cannot be changed.
  * Goto https://secure.meetup.com/meetup_api/console/?path=/:urlname/events
@@ -74,8 +75,15 @@ const html = {
  *
  * @returns {PromiseLike<T|never>|Promise<T|never>|*}
  */
-function getOSWAEvents() {
-    return getEvents("https://api.meetup.com/Oslo-Software-Architecture/events" + getFields() + getSigns());
+function getOSWAEventsAPIv3() {
+    return getEvents("jsonp", "https://api.meetup.com/Oslo-Software-Architecture/events?" + getFields() + getSigns());
+}
+
+/**
+* Meetup API v2
+**/
+function getOSWAEventsAPIv2() {
+    return getEvents("jsonp", "https://api.meetup.com/2/events?sign=true&group_urlname=Oslo-Software-Architecture&" + getFields());
 }
 
 /**
@@ -99,7 +107,7 @@ function getFields() {
 
     const allFields = fields.reduce((p, n) => p + "," + n);
     //console.log(allFields);
-    return "?desc=true&photo-host=public&&status=upcoming,past&page=20&fields="+allFields;
+    return "desc=true&photo-host=public&status=upcoming,past&page=20&fields="+allFields;
 }
 
 function getSigns() {
@@ -113,11 +121,9 @@ function getSigns() {
  * @param url
  * @returns {PromiseLike<T | never> | Promise<T | never> | *}
  */
-function getEvents(url) {
-    return $.ajax({
-        url: url,
-        dataType: 'jsonp'}).then(result => {
-        return result.data;
+function getEvents(dataType, url) {
+    return $.ajax({ url, dataType }).then(data => {
+        return data.results; // result.data for Meetup API /v3
     })
 }
 
@@ -127,7 +133,7 @@ function getEvents(url) {
  * @returns {PromiseLike<any | never> | Promise<any | never>}
  */
 function loadMeetups() {
-    return getOSWAEvents()
+    return getOSWAEventsAPIv2()
         .then(events => {
             return parseEvents(events);
         });
@@ -178,7 +184,7 @@ function templateEvents(data) {
     const waitlist_count = event.waitlist_count;
     const web_actions = event.web_actions;
     const status = event.status;
-    const photo_album = event.photo_album;
+    const photo_album = event.photo_sample;
     eventArray.push({
         id: event.id,
         name,
@@ -232,9 +238,9 @@ function loadPhotoAlbums() {
     const imageUrls = [];
 
     pastEvents.forEach(event => {
-        if (event.photo_album && event.photo_album.photo_sample) {
-            event.photo_album.photo_sample.forEach(sample => {
-                sample.title = event.photo_album.title;
+        if (event.photo_album && event.photo_album) {
+            event.photo_album.forEach(sample => {
+                sample.title = event.photo_link;
                 imageUrls.push(sample);
             })
         }

@@ -2,6 +2,7 @@
 title:  Three
 date:   2015-08-11 19:23
 index:  3
+visible: false
 ---
 <!-- Three -->
 <section id="meetups" class="wrapper style1">
@@ -25,11 +26,11 @@ index:  3
                             <section>
                                 <h3>
                                   <a class="icon fa-calendar red" target="_blank"
-                                      href="{{:link}}"> {{:time}} - {{:name}}</a>
+                                      href="{{:shortlink}}"> {{:time}} - {{:name}}</a>
                                 </h3>
                                 <p>{{:description}}</p>
                                 <ul class="actions special">
-                                    <li><a target="_blank" href="{{:link}}" class="button primary small">Join</a></li>
+                                    <li><a target="_blank" href="{{:shortlink}}" class="button primary small">Join</a></li>
                                 </ul>
                             </section>
                             <hr /><br />
@@ -41,9 +42,9 @@ index:  3
                  {% endraw %}
               </script>
 
-            <footer id="upcomingMeetupList">
+            <section id="upcomingMeetupList" class="special">
                 <p>Ingen meetups er planlagt enda. <br/> Hva med å <a target="_blank" href="https://goo.gl/forms/OJpL46F0qJMNvgIO2">foreslå en?</a> </p>
-            </footer>
+            </section>
 
         </div>
     </div>
