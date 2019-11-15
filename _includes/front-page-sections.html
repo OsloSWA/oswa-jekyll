@@ -1,5 +1,9 @@
 {% assign sections = site.sections | sort:"index" %}
 
 {% for section in sections %}
-  {{ section.content }}
+
+  {% if section.visible or section.visible == nil  %}
+    {{ section.content }}
+  {% endif %}
+
 {% endfor %}

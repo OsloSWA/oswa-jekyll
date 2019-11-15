@@ -102,7 +102,7 @@ function getFields() {
         "how_to_find_us",
         "event_hosts", // .name, .intro, .photo.photo_link
         "featured", // Boolean indicator of whether or not a given event is featured,
-        "photo_album"
+        "photo_sample"
     ];
 
     const allFields = fields.reduce((p, n) => p + "," + n);
