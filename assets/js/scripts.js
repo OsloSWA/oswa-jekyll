@@ -102,7 +102,7 @@ function getFields() {
         "how_to_find_us",
         "event_hosts", // .name, .intro, .photo.photo_link
         "featured", // Boolean indicator of whether or not a given event is featured,
-        "photo_sample"
+        "photo_sample" // Meetup API v3: photo_album
     ];
 
     const allFields = fields.reduce((p, n) => p + "," + n);
