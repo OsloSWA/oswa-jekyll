@@ -29,7 +29,7 @@ You also need Node and NPM to work on the code.
 
 2. Install project:
 
-`npm install`
+`npm install`  
 `bundle install`
 
 ## Resources
